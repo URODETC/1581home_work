@@ -16,7 +16,7 @@ df =  pd.read_csv('titanic.csv')
 # df['FamilySize'] = df['Parch']+df['SibSp']+1
 # print(df.loc[14,'FamilySize']) #6
 
-print(df.groupby('Survived')['Age'].mean())
+# print(df.groupby('Survived')['Age'].mean()) #7
 
 # print(df.groupby(['Survived','Pclass'])['Sex'].value_counts())#8.1
 print(df[(df['Age'] < 18) & (df['Parch'] == 0)].count()) #8.2
